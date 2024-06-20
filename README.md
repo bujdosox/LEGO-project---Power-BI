@@ -1,6 +1,9 @@
 ## LEGO project
 ### Sets released between 1970 and 2022
 Some interesting investigations about LEGO sets releases from 1970 to 2022
+
+![Lego_dashboard](https://github.com/bujdosox/LEGO_project_PowerBI/assets/173184545/6267df99-a23c-4797-b188-6c29c3592152)
+
 ### Goal
 -   Looking for trends by temporal distribution of released amount
 -   Defining most popular themes in each decade
