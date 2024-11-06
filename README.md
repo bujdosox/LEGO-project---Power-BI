@@ -23,31 +23,8 @@ Some interesting investigations about LEGO sets releases from 1970 to 2022
         o   6 years: 1.604 sets
         o   7 years: 1.179 sets
 ### Methods and steps
--   Load single CSV file into Power BI Desktop
--   Check coloumn quality, coloumn distribution and coloumn profile regarding the whole data set in Power Query editor
--   Check data types in Power Query editor
--   Transform data in Power Query editor
-
-        o   Promoted first row as header
-        o   Change data type of year, pieces, minfiges, agerange from text to whole number
-        o   Replace dot to comma in us_retailPrice coloumn, then change data type from text to currency
-        o   Add new conditional coloumn named „decade” based on year of release
--   Create a separate table for measures in Table view + create new measures
-
-        o   Count sets = DISTINCTCOUNT(lego_sets[set_id])
-        o   Count sets mini figures = CALCULATE([Count sets], lego_sets[minifigs] <> 0)
+-   Loading single CSV file into Power BI Desktop
+-   Checking coloumn quality, coloumn distribution, coloumn profile and data types regarding the whole data set in Power Query editor
+-   Transforming data in Power Query editor in order to prepare analysis
+-   Creating separate table for measures + create DAX calculations in order to use them anywhere in the report, referenced by other DAX measures and provide more complex calculations 
 -   Visualize data in Report view
-
-        o   Coloumn chart: Release trend by temporal distribution
-        o   Matrix: Released quantity by themes (highlighting the quantity by data bar color)
-        o   Slicer with decades
-        o   Donut chart: Mini figure distribution by theme (top 5)
-        o   Multi row-card: Total releases and Total releases with mini figures
-        o   Matrix: Released quantity by minimum recommended age range
-        o       Slicer with decades
-        o       Donut chart: Mini figure distribution by theme (top 5)
-        o       Multi row-card: Total releases and Total releases with mini figures
-        o       Matrix: Released quantity by minimum recommended age range
-        o       Checking interactions
-        o       Summarize outcomes on a separate page
-        o       Create a fix panel with buttons: change between pages + clear all filters
